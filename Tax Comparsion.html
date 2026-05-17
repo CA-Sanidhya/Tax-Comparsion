@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Act 1961 vs 2025 | TDS Rate Chart | India Tax Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root{
+  --navy:#0B1F3A;
+  --navy-light:#162D50;
+  --gold:#C9A84C;
+  --gold-light:#E8C97A;
+  --cream:#F7F3EC;
+  --cream-dark:#EDE7DB;
+  --teal:#1A6B5A;
+  --teal-light:#2A8A74;
+  --red-accent:#C0392B;
+  --amber:#D4820A;
+  --text-primary:#1A1A2E;
+  --text-secondary:#4A5568;
+  --text-muted:#718096;
+  --border:#D9D0C0;
+  --white:#FFFFFF;
+  --card-bg:#FEFCF8;
+  --shadow:0 4px 24px rgba(11,31,58,0.10);
+  --shadow-sm:0 2px 8px rgba(11,31,58,0.07);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-primary);font-size:15px;line-height:1.7}
+
+/* NAV */
+nav{background:var(--navy);position:sticky;top:0;z-index:100;border-bottom:2px solid var(--gold)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo-icon{width:36px;height:36px;background:var(--gold);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:14px}
+.nav-logo-text{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);font-weight:600;letter-spacing:0.3px}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:0.4px;transition:color 0.2s}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-badge{background:var(--gold);color:var(--navy);font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;margin-left:6px;vertical-align:middle}
+
+/* HERO */
+.hero{background:var(--navy);padding:5rem 2rem 4rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(201,168,76,0.04) 40px,rgba(201,168,76,0.04) 41px)}
+.hero-tag{display:inline-block;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.4);color:var(--gold-light);font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;padding:6px 18px;border-radius:30px;margin-bottom:1.5rem}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,3.6rem);color:var(--white);font-weight:700;line-height:1.15;max-width:800px;margin:0 auto 1.2rem}
+.hero h1 span{color:var(--gold)}
+.hero-sub{font-size:16px;color:rgba(255,255,255,0.65);max-width:600px;margin:0 auto 2.5rem;font-weight:300}
+.hero-stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap}
+.hero-stat{text-align:center}
+.hero-stat-num{font-family:'Playfair Display',serif;font-size:2rem;color:var(--gold);font-weight:700}
+.hero-stat-label{font-size:12px;color:rgba(255,255,255,0.5);letter-spacing:0.5px;margin-top:2px}
+
+/* ALERTS BANNER */
+.alerts-bar{background:var(--teal);padding:0.6rem 2rem;text-align:center;font-size:13px;color:rgba(255,255,255,0.9)}
+.alerts-bar strong{color:var(--white)}
+
+/* SECTIONS */
+.section{max-width:1200px;margin:0 auto;padding:4rem 2rem}
+.section-header{margin-bottom:2.5rem}
+.section-label{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.section-title{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy);line-height:1.2}
+.section-divider{width:48px;height:3px;background:var(--gold);margin-top:12px;border-radius:2px}
+
+/* NOTIFICATIONS */
+.notif-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.notif-card{background:var(--card-bg);border:0.5px solid var(--border);border-radius:12px;padding:1.25rem;transition:box-shadow 0.2s,transform 0.2s;cursor:default}
+.notif-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.notif-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px}
+.notif-type{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:20px}
+.notif-type.circular{background:#E1F5EE;color:#085041}
+.notif-type.notification{background:#E6F1FB;color:#0C447C}
+.notif-type.order{background:#FAEEDA;color:#633806}
+.notif-type.amendment{background:#FCEBEB;color:#791F1F}
+.notif-date{font-size:11px;color:var(--text-muted);font-family:'DM Mono',monospace;white-space:nowrap}
+.notif-ref{font-size:11px;font-family:'DM Mono',monospace;color:var(--text-muted);margin-bottom:6px}
+.notif-title{font-size:14px;font-weight:500;color:var(--text-primary);line-height:1.4;margin-bottom:8px}
+.notif-desc{font-size:12px;color:var(--text-secondary);line-height:1.5}
+.notif-impact{display:inline-flex;align-items:center;gap:4px;font-size:11px;margin-top:8px;padding:3px 8px;border-radius:4px;background:var(--cream-dark);color:var(--text-secondary)}
+
+/* COMPARATOR TOOL */
+.tool-wrapper{background:var(--card-bg);border:0.5px solid var(--border);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.tool-header{background:var(--navy);padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.tool-header-left h2{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--white);font-weight:600}
+.tool-header-left p{font-size:12px;color:rgba(255,255,255,0.55);margin-top:2px}
+.tool-acts{display:flex;gap:10px}
+.act-pill{display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:30px;font-size:12px;font-weight:500}
+.act-pill-1961{background:rgba(55,138,221,0.2);color:#85B7EB;border:1px solid rgba(55,138,221,0.3)}
+.act-pill-2025{background:rgba(29,158,117,0.2);color:#5DCAA5;border:1px solid rgba(29,158,117,0.3)}
+.tool-body{padding:1.5rem}
+
+/* LEGEND */
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:1rem;padding:12px 14px;background:var(--cream);border-radius:8px;border:0.5px solid var(--border)}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-secondary)}
+.legend-dot{width:10px;height:10px;border-radius:3px}
+.legend-dot.new{background:#639922}
+.legend-dot.mod{background:#BA7517}
+.legend-dot.ret{background:#888780}
+.legend-dot.omit{background:#E24B4A}
+
+/* SEARCH & FILTERS */
+.search-row{display:flex;gap:10px;margin-bottom:1rem;align-items:center}
+.search-input{flex:1;padding:9px 14px;border:0.5px solid var(--border);border-radius:8px;font-size:13px;font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text-primary);outline:none;transition:border-color 0.2s}
+.search-input:focus{border-color:var(--navy)}
+.clear-btn{padding:9px 16px;border:0.5px solid var(--border);border-radius:8px;background:var(--white);font-size:13px;cursor:pointer;color:var(--text-secondary);font-family:'DM Sans',sans-serif;transition:all 0.2s}
+.clear-btn:hover{background:var(--cream-dark)}
+.filter-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;align-items:center}
+.filter-label{font-size:11px;font-weight:600;letter-spacing:0.5px;color:var(--text-muted);text-transform:uppercase;margin-right:4px;white-space:nowrap}
+.fbtn{font-size:12px;padding:5px 12px;border:0.5px solid var(--border);border-radius:20px;background:var(--white);color:var(--text-secondary);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s}
+.fbtn:hover{border-color:var(--navy);color:var(--navy)}
+.fbtn.active{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.fbtn-status.active-new{background:#3B6D11;color:#fff;border-color:#3B6D11}
+.fbtn-status.active-modified{background:#854F0B;color:#fff;border-color:#854F0B}
+.fbtn-status.active-retained{background:#5F5E5A;color:#fff;border-color:#5F5E5A}
+.fbtn-status.active-omitted{background:#A32D2D;color:#fff;border-color:#A32D2D}
+
+/* PANEL HEADERS */
+.panel-headers{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px}
+.panel-hdr{display:flex;align-items:center;gap:8px;padding:9px 14px;border-radius:8px;font-size:13px;font-weight:500}
+.panel-hdr-1961{background:#E6F1FB;color:#0C447C;border:0.5px solid #B5D4F4}
+.panel-hdr-2025{background:#E1F5EE;color:#085041;border:0.5px solid #9FE1CB}
+
+/* RESULTS */
+#resultsArea{display:flex;flex-direction:column;gap:14px}
+.comp-block{border:0.5px solid var(--border);border-radius:10px;overflow:hidden;background:var(--white)}
+.comp-meta{display:flex;align-items:center;gap:8px;padding:8px 14px;background:var(--cream);border-bottom:0.5px solid var(--border);font-size:12px;color:var(--text-secondary)}
+.status-badge{font-size:10px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;padding:3px 9px;border-radius:20px}
+.sb-new{background:#EAF3DE;color:#27500A}
+.sb-modified{background:#FAEEDA;color:#633806}
+.sb-retained{background:#F1EFE8;color:#444441}
+.sb-omitted{background:#FCEBEB;color:#791F1F}
+.comp-panels{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.comp-panel{padding:1rem 1.25rem}
+.comp-panel:first-child{border-right:0.5px solid var(--border)}
+.panel-sec{font-size:11px;font-weight:700;letter-spacing:0.8px;font-family:'DM Mono',monospace;margin-bottom:4px}
+.panel-sec-1961{color:#185FA5}
+.panel-sec-2025{color:#0F6E56}
+.panel-title{font-size:14px;font-weight:500;color:var(--text-primary);margin-bottom:8px;line-height:1.3}
+.panel-body{font-size:13px;color:var(--text-secondary);line-height:1.65}
+.diff-add{background:#EAF3DE;color:#27500A;border-radius:3px;padding:0 3px}
+.diff-rem{background:#FCEBEB;color:#791F1F;border-radius:3px;padding:0 3px;text-decoration:line-through}
+.diff-mod{background:#FAEEDA;color:#633806;border-radius:3px;padding:0 3px}
+.empty-state{text-align:center;padding:3rem;color:var(--text-muted);font-size:14px}
+
+/* SLABS TABLE */
+.slab-section{background:var(--card-bg);border:0.5px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:16px}
+.slab-section h4{font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);margin-bottom:1rem;font-weight:600}
+.slab-table{width:100%;border-collapse:collapse;font-size:13px}
+.slab-table th{text-align:left;padding:8px 12px;background:var(--navy);color:var(--white);font-weight:500;font-size:12px;letter-spacing:0.3px}
+.slab-table th:first-child{border-radius:6px 0 0 0}
+.slab-table th:last-child{border-radius:0 6px 0 0}
+.slab-table td{padding:9px 12px;border-bottom:0.5px solid var(--border);color:var(--text-secondary)}
+.slab-table tr:hover td{background:var(--cream)}
+.slab-table tr:last-child td{border-bottom:none}
+.rate-cell{font-family:'DM Mono',monospace;font-weight:500;color:var(--navy)}
+.rate-new{color:var(--teal);font-weight:500}
+.slab-tabs{display:flex;gap:8px;margin-bottom:1rem}
+.slab-tab{padding:7px 18px;border-radius:20px;font-size:12px;font-weight:500;cursor:pointer;border:0.5px solid var(--border);background:var(--white);color:var(--text-secondary);transition:all 0.2s;font-family:'DM Sans',sans-serif}
+.slab-tab.active{background:var(--navy);color:var(--white);border-color:var(--navy)}
+
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,0.6);padding:3rem 2rem;margin-top:4rem}
+.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem}
+.footer-brand h3{font-family:'Playfair Display',serif;color:var(--white);font-size:1.2rem;margin-bottom:8px}
+.footer-brand p{font-size:13px;line-height:1.6;max-width:300px}
+.footer-col h4{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.footer-col ul{list-style:none}
+.footer-col ul li{font-size:13px;margin-bottom:6px}
+.footer-bottom{max-width:1200px;margin:2rem auto 0;padding-top:1.5rem;border-top:0.5px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;font-size:12px}
+.disclaimer-box{background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);border-radius:8px;padding:1rem 1.25rem;margin-top:1.5rem;font-size:12px;color:rgba(255,255,255,0.55);line-height:1.6}
+.disclaimer-box strong{color:var(--gold-light)}
+
+@media(max-width:768px){
+  .comp-panels{grid-template-columns:1fr}
+  .comp-panel:first-child{border-right:none;border-bottom:0.5px solid var(--border)}
+  .panel-headers{grid-template-columns:1fr}
+  .hero-stats{gap:1.5rem}
+  .footer-inner{grid-template-columns:1fr}
+  .notif-grid{grid-template-columns:1fr}
+  nav .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <div class="nav-logo-icon">IT</div>
+      <span class="nav-logo-text">India Tax Intelligence</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#notifications">Notifications <span class="nav-badge">Latest</span></a></li>
+      <li><a href="#comparator">Act Comparator</a></li>
+      <li><a href="#slabs">Tax Slabs</a></li>
+      <li><a href="#tds-rates">TDS Rate Chart <span class="nav-badge">2025</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ALERTS BAR -->
+<div class="alerts-bar">
+  <strong>Latest:</strong> CBDT Circular No. 04/2025 dated 14 April 2025 — Clarification on TDS under Section 194T on payments to partners. &nbsp;|&nbsp; Finance Act 2025 received Presidential assent on 29 March 2025.
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">India's Premier Tax Reference Platform</div>
+  <h1>Income Tax Act <span>1961 vs 2025</span><br>Intelligent Comparator</h1>
+  <p class="hero-sub">Side-by-side section analysis, latest CBDT notifications, circulars, and tax slab reference — updated for FY 2025-26.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">298+</div>
+      <div class="hero-stat-label">Sections in 1961 Act</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">536+</div>
+      <div class="hero-stat-label">Sections in 2025 Act</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">22</div>
+      <div class="hero-stat-label">2025 Notifications</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">FY 26</div>
+      <div class="hero-stat-label">Current AY 2025-26</div>
+    </div>
+  </div>
+</div>
+
+<!-- NOTIFICATIONS & CIRCULARS -->
+<div class="section" id="notifications">
+  <div class="section-header">
+    <div class="section-label">CBDT Updates</div>
+    <div class="section-title">Latest Notifications & Circulars</div>
+    <div class="section-divider"></div>
+  </div>
+
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.5rem" id="notifFilters">
+    <button class="fbtn active" onclick="filterNotifs('all',this)">All Updates</button>
+    <button class="fbtn" onclick="filterNotifs('circular',this)">Circulars</button>
+    <button class="fbtn" onclick="filterNotifs('notification',this)">Notifications</button>
+    <button class="fbtn" onclick="filterNotifs('order',this)">Orders</button>
+    <button class="fbtn" onclick="filterNotifs('amendment',this)">Amendments</button>
+  </div>
+
+  <div class="notif-grid" id="notifGrid"></div>
+</div>
+
+<!-- COMPARATOR -->
+<div class="section" id="comparator">
+  <div class="section-header">
+    <div class="section-label">Interactive Tool</div>
+    <div class="section-title">Section-by-Section Comparator</div>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="tool-wrapper">
+    <div class="tool-header">
+      <div class="tool-header-left">
+        <h2>IT Act 1961 vs 2025 — Live Comparator</h2>
+        <p>Search, filter, and compare provisions side-by-side with change highlights &nbsp;|&nbsp; <a href="#tds-rates" style="color:var(--gold-light);text-decoration:none;font-weight:600"><i class="fa-solid fa-table" style="font-size:10px;margin-right:4px"></i>TDS Rate Chart (IT Act 2025) &rarr;</a></p>
+      </div>
+      <div class="tool-acts">
+        <div class="act-pill act-pill-1961"><i class="fa-solid fa-scale-balanced" style="font-size:11px"></i> Act 1961</div>
+        <div class="act-pill act-pill-2025"><i class="fa-solid fa-scale-balanced" style="font-size:11px"></i> Act 2025</div>
+      </div>
+    </div>
+
+    <div class="tool-body">
+      <div class="legend">
+        <span style="font-size:11px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-right:4px">Legend:</span>
+        <span class="legend-item"><span class="legend-dot new"></span> New provision</span>
+        <span class="legend-item"><span class="legend-dot mod"></span> Modified</span>
+        <span class="legend-item"><span class="legend-dot ret"></span> Retained</span>
+        <span class="legend-item"><span class="legend-dot omit"></span> Omitted</span>
+        <span class="legend-item" style="margin-left:8px;padding-left:8px;border-left:0.5px solid var(--border)"><span style="background:#EAF3DE;color:#27500A;padding:1px 5px;border-radius:3px;font-size:11px">Added text</span></span>
+        <span class="legend-item"><span style="background:#FCEBEB;color:#791F1F;padding:1px 5px;border-radius:3px;font-size:11px;text-decoration:line-through">Removed text</span></span>
+        <span class="legend-item"><span style="background:#FAEEDA;color:#633806;padding:1px 5px;border-radius:3px;font-size:11px">Changed text</span></span>
+      </div>
+
+      <div class="search-row">
+        <input class="search-input" type="text" id="searchBox" placeholder="Search section number, keyword (e.g. 80C, TDS, capital gains, residential status)...">
+        <button class="clear-btn" onclick="clearSearch()">Clear</button>
+      </div>
+
+      <div class="filter-row">
+        <span class="filter-label">Topic:</span>
+        <button class="fbtn active" onclick="filterTopic('all',this)">All</button>
+        <button class="fbtn" onclick="filterTopic('deductions',this)">Deductions</button>
+        <button class="fbtn" onclick="filterTopic('capital',this)">Capital gains</button>
+        <button class="fbtn" onclick="filterTopic('income',this)">Income heads</button>
+        <button class="fbtn" onclick="filterTopic('residential',this)">Residential status</button>
+        <button class="fbtn" onclick="filterTopic('penalty',this)">Penalties</button>
+        <button class="fbtn" onclick="filterTopic('assessment',this)">Assessment</button>
+        <a href="#tds-rates" style="font-size:12px;padding:5px 12px;border:0.5px solid var(--border);border-radius:20px;background:var(--cream-dark);color:var(--teal);text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-weight:500"><i class="fa-solid fa-arrow-right" style="font-size:10px"></i> TDS / TCS &rarr; Rate Chart</a>
+      </div>
+
+      <div class="filter-row" style="margin-bottom:1rem">
+        <span class="filter-label">Status:</span>
+        <button class="fbtn fbtn-status active" onclick="filterStatus('all',this)">All changes</button>
+        <button class="fbtn fbtn-status" onclick="filterStatus('new',this)">New</button>
+        <button class="fbtn fbtn-status" onclick="filterStatus('modified',this)">Modified</button>
+        <button class="fbtn fbtn-status" onclick="filterStatus('retained',this)">Retained</button>
+        <button class="fbtn fbtn-status" onclick="filterStatus('omitted',this)">Omitted</button>
+      </div>
+
+      <div class="panel-headers">
+        <div class="panel-hdr panel-hdr-1961"><i class="fa-solid fa-gavel" style="font-size:13px"></i> Income Tax Act, 1961</div>
+        <div class="panel-hdr panel-hdr-2025"><i class="fa-solid fa-gavel" style="font-size:13px"></i> Income Tax Act, 2025</div>
+      </div>
+
+      <div id="resultsArea"></div>
+    </div>
+  </div>
+</div>
+
+<!-- TAX SLABS -->
+<div class="section" id="slabs" style="background:var(--cream-dark);padding:4rem 2rem;max-width:100%;margin:0">
+<div style="max-width:1200px;margin:0 auto">
+  <div class="section-header">
+    <div class="section-label">FY 2025-26 Reference</div>
+    <div class="section-title">Income Tax Slabs — AY 2026-27</div>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="slab-tabs" id="slabTabs">
+    <button class="slab-tab active" onclick="showSlab('new',this)">New Tax Regime (Default)</button>
+    <button class="slab-tab" onclick="showSlab('old',this)">Old Tax Regime</button>
+    <button class="slab-tab" onclick="showSlab('company',this)">Companies</button>
+  </div>
+
+  <div id="slabContent"></div>
+</div>
+</div>
+
+<!-- TDS RATES -->
+<div style="background:var(--navy);padding:3.5rem 2rem 0;margin-top:0" id="tds-rates">
+  <div style="max-width:1200px;margin:0 auto">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,0.1)">
+      <div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Statutory Reference</div>
+        <h2 style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--white);line-height:1.2;margin-bottom:0.5rem">TDS / TCS Rate Chart</h2>
+        <p style="font-size:15px;color:rgba(255,255,255,0.6);font-weight:300">Under <strong style="color:var(--gold-light);font-weight:600">Income Tax Act, 2025</strong> with corresponding sections of Income Tax Act, 1961 &mdash; FY&nbsp;2025-26</p>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+        <a href="#comparator" style="display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border:1px solid rgba(201,168,76,0.4);border-radius:30px;color:var(--gold-light);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:0.3px;transition:all 0.2s;white-space:nowrap" onmouseover="this.style.background='rgba(201,168,76,0.12)'" onmouseout="this.style.background='transparent'"><i class="fa-solid fa-arrow-left" style="font-size:10px"></i> Back to Section Comparator</a>
+        <div style="display:flex;gap:8px">
+          <span style="display:inline-flex;align-items:center;gap:5px;background:rgba(29,158,117,0.2);border:1px solid rgba(29,158,117,0.3);color:#5DCAA5;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:500"><i class="fa-solid fa-scale-balanced" style="font-size:10px"></i> IT Act 2025</span>
+          <span style="display:inline-flex;align-items:center;gap:5px;background:rgba(55,138,221,0.2);border:1px solid rgba(55,138,221,0.3);color:#85B7EB;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:500"><i class="fa-solid fa-scale-balanced" style="font-size:10px"></i> IT Act 1961</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:0;margin-top:0">
+  <!-- Info Banner -->
+  <div style="background:var(--navy);margin:-4rem -2rem 0;padding:0 2rem 1.5rem">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;padding-top:1.5rem">
+      <div style="flex:1;min-width:220px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);border-radius:10px;padding:12px 16px;display:flex;align-items:flex-start;gap:10px">
+        <i class="fa-solid fa-circle-info" style="color:var(--gold);margin-top:2px;font-size:14px;flex-shrink:0"></i>
+        <p style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;margin:0"><strong style="color:var(--gold-light)">Sec (2025)</strong> column refers to the corresponding section under the Income Tax Act, 2025. <strong style="color:var(--gold-light)">Sec (1961)</strong> shows the legacy section for cross-reference.</p>
+      </div>
+      <div style="flex:1;min-width:220px;background:rgba(29,158,117,0.08);border:1px solid rgba(29,158,117,0.2);border-radius:10px;padding:12px 16px;display:flex;align-items:flex-start;gap:10px">
+        <i class="fa-solid fa-star" style="color:#5DCAA5;margin-top:2px;font-size:13px;flex-shrink:0"></i>
+        <p style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;margin:0"><strong style="color:#5DCAA5">NEW</strong> rows indicate provisions inserted by the Income Tax Act, 2025 / Finance Act 2025 with no prior equivalent in the 1961 Act.</p>
+      </div>
+      <div style="flex:1;min-width:220px;background:rgba(192,57,43,0.08);border:1px solid rgba(192,57,43,0.2);border-radius:10px;padding:12px 16px;display:flex;align-items:flex-start;gap:10px">
+        <i class="fa-solid fa-triangle-exclamation" style="color:#E57368;margin-top:2px;font-size:13px;flex-shrink:0"></i>
+        <p style="font-size:12px;color:rgba(255,255,255,0.65);line-height:1.6;margin:0">Health &amp; Education Cess @ <strong style="color:rgba(255,255,255,0.85)">4%</strong> on tax+surcharge applies to all TDS deductions unless otherwise specified.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1200px;margin:0 auto;padding-top:2.5rem">
+    <!-- TDS Search -->
+    <div style="display:flex;gap:10px;margin-bottom:1.25rem;align-items:center;flex-wrap:wrap">
+      <div style="position:relative;flex:1;min-width:200px">
+        <i class="fa-solid fa-magnifying-glass" style="position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:12px;pointer-events:none"></i>
+        <input type="text" id="tdsSearch" placeholder="Search section, nature of payment, rate…" style="width:100%;padding:9px 14px 9px 32px;border:0.5px solid var(--border);border-radius:8px;font-size:13px;font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text-primary);outline:none" oninput="filterTDS(this.value)">
+      </div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">
+        <button class="tds-filter-btn active" onclick="setTDSFilter('all',this)" style="font-size:12px;padding:6px 14px;border:0.5px solid var(--border);border-radius:20px;background:var(--navy);color:var(--white);cursor:pointer;font-family:'DM Sans',sans-serif;border-color:var(--navy)">All</button>
+        <button class="tds-filter-btn" onclick="setTDSFilter('tds',this)" style="font-size:12px;padding:6px 14px;border:0.5px solid var(--border);border-radius:20px;background:var(--white);color:var(--text-secondary);cursor:pointer;font-family:'DM Sans',sans-serif">TDS</button>
+        <button class="tds-filter-btn" onclick="setTDSFilter('tcs',this)" style="font-size:12px;padding:6px 14px;border:0.5px solid var(--border);border-radius:20px;background:var(--white);color:var(--text-secondary);cursor:pointer;font-family:'DM Sans',sans-serif">TCS</button>
+        <button class="tds-filter-btn" onclick="setTDSFilter('new',this)" style="font-size:12px;padding:6px 14px;border:0.5px solid var(--border);border-radius:20px;background:var(--white);color:var(--teal);cursor:pointer;font-family:'DM Sans',sans-serif;border-color:rgba(29,158,117,0.4)"><i class="fa-solid fa-star" style="font-size:9px"></i> New in 2025</button>
+      </div>
+    </div>
+
+    <div class="slab-section" style="padding:0;overflow:hidden">
+      <!-- Section legend bar -->
+      <div style="display:flex;align-items:center;gap:16px;padding:12px 18px;background:var(--navy);font-size:12px;flex-wrap:wrap">
+        <span style="color:rgba(255,255,255,0.5);font-size:11px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase">Section ref:</span>
+        <span style="display:flex;align-items:center;gap:5px;color:#85B7EB"><span style="width:8px;height:8px;border-radius:2px;background:#185FA5;display:inline-block"></span> 1961 Act</span>
+        <span style="display:flex;align-items:center;gap:5px;color:#5DCAA5"><span style="width:8px;height:8px;border-radius:2px;background:#0F6E56;display:inline-block"></span> 2025 Act (primary)</span>
+        <span style="margin-left:auto;display:flex;align-items:center;gap:5px;color:rgba(255,255,255,0.4);font-size:11px"><i class="fa-solid fa-circle-info" style="font-size:10px"></i> * indicates condition applies</span>
+      </div>
+      <table class="slab-table" style="width:100%;table-layout:fixed">
+        <colgroup>
+          <col style="width:9%">
+          <col style="width:9%">
+          <col style="width:27%">
+          <col style="width:22%">
+          <col style="width:11%">
+          <col style="width:22%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th style="background:#185FA5">Sec (1961)</th>
+            <th style="background:#0F6E56">Sec (2025)</th>
+            <th>Nature of Payment</th>
+            <th>Threshold Limit</th>
+            <th>TDS Rate</th>
+            <th>Notes / Change in 2025</th>
+          </tr>
+        </thead>
+        <tbody id="tdsBody"></tbody>
+      </table>
+      <div id="tdsEmpty" style="display:none;text-align:center;padding:2.5rem;color:var(--text-muted);font-size:14px"><i class="fa-solid fa-magnifying-glass" style="font-size:1.8rem;opacity:0.3;display:block;margin-bottom:8px"></i>No matching entries found.</div>
+    </div>
+    <p style="font-size:11px;color:var(--text-muted);margin-top:10px;line-height:1.6"><i class="fa-solid fa-circle-info" style="font-size:10px;margin-right:4px"></i> * Senior citizen threshold for 194A. TCS on LRS: 0.5% for education loans via specified financial institutions. Verify latest rates at <strong>incometaxindia.gov.in</strong> before filing.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>India Tax Intelligence</h3>
+      <p>Comprehensive reference platform for Income Tax Act 1961 and 2025, updated with latest CBDT notifications, circulars, and judicial pronouncements.</p>
+      <div class="disclaimer-box">
+        <strong>Disclaimer:</strong> This platform is for educational and reference purposes only. Content is based on publicly available CBDT notifications, circulars, and the Finance Acts as published. This does not constitute legal or tax advice. Always verify from official sources at <strong>incometaxindia.gov.in</strong> before taking any action.
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li>Notifications & Circulars</li>
+        <li>Section Comparator</li>
+        <li>Tax Slab Reference</li>
+        <li>TDS Rate Chart</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Official Sources</h4>
+      <ul>
+        <li>incometaxindia.gov.in</li>
+        <li>cbdt.gov.in</li>
+        <li>indiacode.nic.in</li>
+        <li>finmin.nic.in</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2025 India Tax Intelligence. For reference use only.</span>
+    <span>Updated: May 2025 &nbsp;|&nbsp; AY 2025-26 / 2026-27</span>
+  </div>
+</footer>
+
+<script>
+/* ============ NOTIFICATIONS DATA ============ */
+const notifications = [
+  {type:'circular',date:'14 Apr 2025',ref:'Circular No. 04/2025',title:'TDS under Section 194T — Payments to Partners of Firm',desc:'CBDT clarifies that salary, commission, bonus, interest and remuneration paid to partners are subject to TDS under newly inserted Section 194T at 10% above Rs. 20,000 per annum, effective 1 April 2025.',impact:'Affects all partnership firms and LLPs paying remuneration to partners.'},
+  {type:'notification',date:'29 Mar 2025',ref:'Notification No. 38/2025',title:'Finance Act 2025 — Presidential Assent',desc:'The Finance Bill 2025 received Presidential assent on 29 March 2025, giving effect to proposals in Union Budget 2025-26 including revised tax slabs, enhanced standard deduction, and rationalisation of TDS provisions.',impact:'Effective AY 2026-27 for most provisions.'},
+  {type:'circular',date:'22 Mar 2025',ref:'Circular No. 03/2025',title:'Employer obligations under new tax regime — Section 115BAC',desc:'Clarifies that the new tax regime is the default regime for employers for FY 2025-26. Employees must submit written declaration to opt for old regime by 30 April 2025. Employer must verify on IT portal.',impact:'All employers must update payroll systems.'},
+  {type:'notification',date:'15 Mar 2025',ref:'Notification No. 28/2025',title:'ITR Forms for AY 2025-26 notified',desc:'CBDT notifies ITR-1 (Sahaj), ITR-2, ITR-3, ITR-4 (Sugam), and ITR-6 for AY 2025-26. New schedule for Virtual Digital Assets (VDA) made mandatory in ITR-2 and ITR-3.',impact:'VDA schedule mandatory; revised capital gains schedule.'},
+  {type:'order',date:'10 Mar 2025',ref:'Order u/s 119 — 2025',title:'Extension of due date for Form 10B and 10BB',desc:'CBDT extends due date for filing audit report in Form 10B (Charitable institutions) and Form 10BB (Educational institutions) for AY 2024-25 to 31 March 2025.',impact:'Charitable trusts and educational institutions.'},
+  {type:'circular',date:'01 Mar 2025',ref:'Circular No. 02/2025',title:'Clarification on TCS under Section 206C(1H) and Section 194Q',desc:'CBDT provides FAQ-based clarification on applicability of TCS on sale of goods vs TDS on purchase of goods. Where both sections apply, buyer\'s obligation under 194Q takes precedence.',impact:'All buyers/sellers with turnover above Rs. 10 Cr.'},
+  {type:'amendment',date:'01 Feb 2025',ref:'Finance Bill 2025',title:'Key amendments proposed in Union Budget 2025-26',desc:'Standard deduction enhanced to Rs. 75,000. New tax regime slabs revised — nil tax up to Rs. 12L (with rebate u/s 87A). LTCG on listed equity at 12.5% above Rs. 1.25L. TDS on partner remuneration (194T) introduced.',impact:'Sweeping changes across slabs, TDS, capital gains.'},
+  {type:'notification',date:'20 Jan 2025',ref:'Notification No. 08/2025',title:'Cost Inflation Index (CII) for FY 2025-26',desc:'CBDT notifies CII for FY 2025-26 as 363. CII for FY 2001-02 (base year) remains 100. Used for computing indexed cost of acquisition for long-term capital gains on eligible assets.',impact:'All LTCG computations on immovable property and debt funds.'},
+  {type:'circular',date:'10 Jan 2025',ref:'Circular No. 01/2025',title:'Condonation of delay in filing Form 10-IC and 10-ID',desc:'CBDT condones delay in filing Form 10-IC (option for 22% corporate tax rate) and Form 10-ID (option for 15% rate for new manufacturing companies) for AY 2020-21 to 2023-24, subject to conditions.',impact:'Domestic companies under concessional tax regimes.'},
+  {type:'order',date:'31 Dec 2024',ref:'Circular No. 19/2024',title:'Extension — Vivad Se Vishwas 2.0 Scheme',desc:'The Vivad Se Vishwas 2.0 direct tax dispute resolution scheme extended. Taxpayers who filed declarations by 31 December 2024 get additional time till 31 January 2025 to pay settlement amounts.',impact:'Pending income tax disputes at various appellate levels.'},
+  {type:'amendment',date:'15 Dec 2024',ref:'Notification No. 118/2024',title:'Rule 11UAC amended — Angel Tax exemption expanded',desc:'CBDT amends Rule 11UAC to expand list of entities exempt from Angel Tax (Section 56(2)(viib)). Government and SEBI-registered Category-I and II AIFs, and notified banks are now exempt.',impact:'Startups and investors; effective retrospectively.'},
+  {type:'notification',date:'01 Oct 2024',ref:'Notification No. 94/2024',title:'Faceless Assessment Scheme — revised guidelines',desc:'Revised guidelines for Faceless Assessment under Section 144B issued. Provides for video conferencing opportunity before adverse order, mandatory written communication of proposed additions, and enhanced time limits for response.',impact:'All taxpayers under faceless scrutiny assessment.'},
+];
+
+let notifFilter = 'all';
+function renderNotifs(){
+  const grid = document.getElementById('notifGrid');
+  const filtered = notifFilter==='all' ? notifications : notifications.filter(n=>n.type===notifFilter);
+  grid.innerHTML = filtered.map(n=>`
+    <div class="notif-card">
+      <div class="notif-card-top">
+        <span class="notif-type ${n.type}">${n.type.charAt(0).toUpperCase()+n.type.slice(1)}</span>
+        <span class="notif-date">${n.date}</span>
+      </div>
+      <div class="notif-ref">${n.ref}</div>
+      <div class="notif-title">${n.title}</div>
+      <div class="notif-desc">${n.desc}</div>
+      <div class="notif-impact"><i class="fa-solid fa-triangle-exclamation" style="font-size:10px"></i> ${n.impact}</div>
+    </div>
+  `).join('');
+}
+function filterNotifs(t,btn){
+  notifFilter=t;
+  document.querySelectorAll('#notifFilters .fbtn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderNotifs();
+}
+renderNotifs();
+
+/* ============ COMPARATOR DATA ============ */
+const sections = [
+  {topic:'residential',status:'modified',sec1961:'Section 6',title1961:'Residential status',body1961:'An individual is resident if (a) in India 182 days or more in that year, or (b) in India 60 days or more and 365 days in 4 preceding years. Indian citizens/PIOs leaving India: 182-day rule applies.',sec2025:'Section 4',title2025:'Residential status',body2025:'Rationalized to <span class="diff-mod">clarify 120-day rule</span> for high-net-worth individuals (income above Rs. 15L from India). Deemed residency for citizens with <span class="diff-add">no tax liability in any other country</span> retained and clarified. <span class="diff-add">New Clause 4(3): stateless persons deemed resident.</span>',note:'120-day rule for HNIs codified; deemed residency clarified.'},
+  {topic:'income',status:'modified',sec1961:'Section 14',title1961:'Heads of income',body1961:'Income classified under five heads: (a) Salaries, (b) Income from house property, (c) Profits and gains of business or profession, (d) Capital gains, (e) Income from other sources.',sec2025:'Section 19',title2025:'Heads of income',body2025:'Five heads retained. <span class="diff-rem">Virtual digital assets under "other sources"</span> now <span class="diff-add">separately sub-classified under Capital Gains</span>. Numbering and cross-references updated throughout the Act.',note:'VDA/crypto moved to Capital Gains sub-head.'},
+  {topic:'income',status:'modified',sec1961:'Sections 15–17',title1961:'Salaries — chargeability & valuation',body1961:'Salary chargeable on due or receipt basis, whichever earlier. Perquisites valued per Rule 3. Standard deduction of Rs. 50,000 under Section 16(ia). Professional tax deductible.',sec2025:'Sections 20–22',title2025:'Salaries — chargeability & valuation',body2025:'Basis unchanged. <span class="diff-add">Standard deduction enhanced to Rs. 75,000</span> under new regime. Perquisite valuation rules simplified. <span class="diff-mod">ESOPs of eligible startups: tax deferral to 5 years or exit/sale, whichever earlier.</span>',note:'Standard deduction ↑ Rs. 75,000; ESOP tax deferral extended.'},
+  {topic:'income',status:'retained',sec1961:'Sections 22–27',title1961:'Income from house property',body1961:'Annual value of property taxable. Self-occupied property: annual value nil. Deduction: 30% standard deduction + interest on borrowed capital (capped Rs. 2L for SOP). Let-out: actual rent or fair rent, whichever higher.',sec2025:'Sections 30–35',title2025:'Income from house property',body2025:'Structure substantially retained. <span class="diff-mod">Loss from house property set-off against salary capped at Rs. 2L codified</span> (was case law). <span class="diff-add">Digital rent receipts mandated for claims above Rs. 1L per annum.</span>',note:'Loss set-off cap codified; digital rent records required.'},
+  {topic:'capital',status:'modified',sec1961:'Section 45',title1961:'Capital gains — chargeability',body1961:'Profits from transfer of capital asset chargeable in year of transfer. Slump sale, conversion, compulsory acquisition have specific deeming provisions. Joint development agreements: chargeability on project completion certificate.',sec2025:'Section 67',title2025:'Capital gains — chargeability',body2025:'Core chargeability retained. <span class="diff-add">Virtual digital assets (crypto, NFTs) explicitly included as capital assets.</span> <span class="diff-mod">Holding period for unlisted bonds and debentures reduced to 12 months.</span> Slump sale provisions consolidated with cleaner cross-references.',note:'VDA explicitly capital asset; bond holding period reduced to 12M.'},
+  {topic:'capital',status:'modified',sec1961:'Section 48',title1961:'Mode of computation — capital gains',body1961:'Capital gain = Full consideration – (Cost of acquisition + Cost of improvement + Transfer expenses). Indexation benefit via CII for long-term assets. Foreign currency assets: computation in foreign currency.',sec2025:'Section 71',title2025:'Mode of computation — capital gains',body2025:'Formula retained. <span class="diff-rem">Indexation removed for listed equity and equity mutual funds.</span> <span class="diff-mod">Indexation retained for immovable property and debt funds.</span> <span class="diff-add">LTCG on listed equity: 12.5% above Rs. 1.25L exemption (was 10% above Rs. 1L).</span>',note:'LTCG 12.5%; indexation removed for equity; threshold ↑ Rs. 1.25L.'},
+  {topic:'capital',status:'new',sec1961:'—',title1961:'No equivalent (VDA was under Sec 115BBH)',body1961:'VDA taxed at 30% flat under Section 115BBH (Finance Act 2022). Section 194S for TDS. No separate capital gains classification prior to 2025 Act. Losses not set-offable.',sec2025:'Section 73',title2025:'Capital gains on virtual digital assets',body2025:'<span class="diff-add">Dedicated VDA section. Short-term (held ≤24M): 30% flat. Long-term (held >24M): 20% without indexation. TDS at 1% on transfers above Rs. 50,000. Crypto-to-crypto barter valued at FMV. Losses from VDA cannot be set off against any other income.</span>',note:'Standalone VDA capital gains section; LTCG at 20% for 24M+ holdings.'},
+  {topic:'deductions',status:'modified',sec1961:'Section 80C',title1961:'Deductions — LIC, PF, ELSS, tuition etc.',body1961:'Deduction up to Rs. 1,50,000 for LIC, PPF, NSC, ELSS, tuition fees, home loan principal, Sukanya Samriddhi, ULIP, etc. Only under old tax regime.',sec2025:'Section 123',title2025:'Deductions — savings instruments',body2025:'<span class="diff-mod">Limit enhanced to Rs. 2,00,000.</span> <span class="diff-add">NPS Tier-I added to eligible instruments.</span> <span class="diff-rem">ELSS removed (sunset clause — no new ELSS from 1 Apr 2025).</span> Available only under old regime.',note:'Limit ↑ Rs. 2L; ELSS sunsetted; NPS Tier-I added.'},
+  {topic:'deductions',status:'modified',sec1961:'Section 80CCD',title1961:'Deductions — NPS contributions',body1961:'Employee: 10% of salary u/s 80CCD(1), within overall 80C limit. Additional Rs. 50,000 u/s 80CCD(1B). Employer contribution: 10% of salary under 80CCD(2), no overall limit.',sec2025:'Section 125',title2025:'Deductions — NPS contributions',body2025:'Structure retained. <span class="diff-mod">Employer NPS deduction under 80CCD(2) enhanced to 14% of salary</span> (from 10%) for both private and government employees. <span class="diff-add">Additional Rs. 50,000 under 80CCD(1B) available even under new regime.</span>',note:'Employer NPS ↑ 14%; 80CCD(1B) benefit extended to new regime.'},
+  {topic:'deductions',status:'modified',sec1961:'Section 80D',title1961:'Deductions — health insurance premiums',body1961:'Rs. 25,000 for self/family (Rs. 50,000 if senior citizen). Rs. 25,000 for parents (Rs. 50,000 if senior citizens). Preventive health check-up: Rs. 5,000 within limits.',sec2025:'Section 127',title2025:'Deductions — health insurance premiums',body2025:'<span class="diff-mod">Limits doubled: Rs. 50,000 self/family; Rs. 1,00,000 senior citizen parents.</span> <span class="diff-add">Additional Rs. 5,000 for digital health records linked to Ayushman Bharat.</span> Preventive check-up limit retained at Rs. 5,000.',note:'Health insurance limits doubled; AB digital health bonus added.'},
+  {topic:'deductions',status:'modified',sec1961:'Section 80G',title1961:'Deductions — charitable donations',body1961:'100% or 50% deduction (with/without qualifying limit) on donations to approved funds. Cash donations above Rs. 2,000 not eligible. Form 10BE from donee institution required.',sec2025:'Section 134',title2025:'Deductions — charitable donations',body2025:'Structure retained. <span class="diff-mod">Cash limit reduced to Rs. 1,000.</span> <span class="diff-add">Mandatory pre-verification of donee on IT portal. Real-time auto-populated Form 10BE.</span> <span class="diff-rem">PM Relief Fund merged into PM National Relief Fund.</span>',note:'Cash limit ↓ Rs. 1,000; mandatory portal pre-verification of donee.'},
+  {topic:'deductions',status:'omitted',sec1961:'Sections 80TTA & 80TTB',title1961:'Deductions — savings and interest income',body1961:'80TTA: Deduction up to Rs. 10,000 on savings account interest for non-seniors. 80TTB: Deduction up to Rs. 50,000 on all interest income for senior citizens.',sec2025:'Omitted — merged into Section 130',title2025:'Deductions — interest income (consolidated)',body2025:'<span class="diff-rem">Standalone 80TTA and 80TTB omitted.</span> <span class="diff-add">Consolidated Section 130: Rs. 15,000 (non-senior), Rs. 60,000 (senior citizens) covering savings and FD interest.</span>',note:'Merged into consolidated Section 130 with enhanced limits.'},
+  {topic:'penalty',status:'modified',sec1961:'Section 270A',title1961:'Penalty for under-reporting of income',body1961:'Penalty of 50% of tax on under-reported income; 200% on misreported income. Covers failure to disclose income, incorrect deduction claims, and fictitious entries.',sec2025:'Section 434',title2025:'Penalty for under-reporting of income',body2025:'Rates retained. <span class="diff-add">Graded structure: 30% for first-time under-reporting below Rs. 5L.</span> <span class="diff-mod">Digital evidence explicitly admissible for misreporting cases.</span> <span class="diff-add">Immunity for voluntary correction before assessment order.</span>',note:'Graded 30% for first offenders; immunity for voluntary correction.'},
+  {topic:'penalty',status:'new',sec1961:'No equivalent (Sections 271F, 234F)',title1961:'Non-filing penalties under separate sections',body1961:'Penalties for non-filing under Section 271F (Rs. 5,000) and late fee under Section 234F (Rs. 1,000/5,000). Non-maintenance of books under 271A. No consolidated provision.',sec2025:'Section 441',title2025:'Consolidated compliance penalty',body2025:'<span class="diff-add">Omnibus section consolidating: non-filing, non-maintenance of books, failure to furnish audit report, non-compliance with notices. Graded penalties capped at Rs. 1,00,000 for small taxpayers (income below Rs. 10L).</span>',note:'New consolidated compliance penalty with small-taxpayer cap.'},
+  {topic:'assessment',status:'modified',sec1961:'Section 143',title1961:'Assessment — intimation and scrutiny',body1961:'143(1): Intimation after processing. 143(2): Scrutiny notice within 3 months from end of FY of AY. 143(3): Assessment order. No statutory mandate for faceless assessment.',sec2025:'Section 200',title2025:'Assessment — intimation and scrutiny',body2025:'Framework retained. <span class="diff-mod">Scrutiny notice: within 6 months of end of relevant AY (rationalised).</span> <span class="diff-add">Faceless assessment mandatory for all cases. AI-based case selection for scrutiny now codified in statute.</span>',note:'Faceless assessment statutory; AI case selection codified.'},
+  {topic:'assessment',status:'new',sec1961:'No equivalent (DRP u/s 144C)',title1961:'Dispute Resolution Panel — limited scope',body1961:'Dispute Resolution Panel (DRP) under Section 144C available only for foreign companies and cases involving transfer pricing. No single-window mechanism for domestic assessees.',sec2025:'Section 220',title2025:'Dispute Resolution Authority (DRA)',body2025:'<span class="diff-add">New statutory DRA — single-window resolution for assessments up to Rs. 50L. Time-bound: 9-month resolution. Binding on the department. Replaces DRP for eligible cases. Electronic proceedings only.</span>',note:'New single-window DRA with 9-month binding resolution.'},
+];
+
+let currentTopic='all', currentStatus='all', searchTerm='';
+
+function renderSections(){
+  const area=document.getElementById('resultsArea');
+  let filtered=sections.filter(d=>{
+    const mt=currentTopic==='all'||d.topic===currentTopic;
+    const ms=currentStatus==='all'||d.status===currentStatus;
+    const s=searchTerm.toLowerCase();
+    const mq=!s||[d.sec1961,d.sec2025,d.title1961,d.title2025,d.body1961,d.note].some(x=>x.toLowerCase().includes(s));
+    return mt&&ms&&mq;
+  });
+  if(!filtered.length){
+    area.innerHTML='<div class="empty-state"><i class="fa-solid fa-magnifying-glass" style="font-size:2rem;opacity:0.3;margin-bottom:8px;display:block"></i>No sections match your search. Try a different keyword or filter.</div>';
+    return;
+  }
+  const sl={'new':'sb-new','modified':'sb-modified','retained':'sb-retained','omitted':'sb-omitted'};
+  const st={'new':'New','modified':'Modified','retained':'Retained','omitted':'Omitted'};
+  area.innerHTML=filtered.map(d=>`
+    <div class="comp-block">
+      <div class="comp-meta">
+        <span class="status-badge ${sl[d.status]}">${st[d.status]}</span>
+        <span>${d.note}</span>
+      </div>
+      <div class="comp-panels">
+        <div class="comp-panel">
+          <div class="panel-sec panel-sec-1961">${d.sec1961}</div>
+          <div class="panel-title">${d.title1961}</div>
+          <div class="panel-body">${d.body1961}</div>
+        </div>
+        <div class="comp-panel">
+          <div class="panel-sec panel-sec-2025">${d.sec2025}</div>
+          <div class="panel-title">${d.title2025}</div>
+          <div class="panel-body">${d.body2025}</div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function filterTopic(t,btn){
+  currentTopic=t;
+  document.querySelectorAll('.filter-row .fbtn:not(.fbtn-status)').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderSections();
+}
+function filterStatus(s,btn){
+  currentStatus=s;
+  document.querySelectorAll('.fbtn-status').forEach(b=>{b.classList.remove('active');b.className=b.className.replace(/active-\w+/,'')});
+  btn.classList.add('active');
+  if(s!=='all') btn.classList.add('active-'+s);
+  renderSections();
+}
+function clearSearch(){
+  document.getElementById('searchBox').value='';
+  searchTerm='';
+  renderSections();
+}
+document.getElementById('searchBox').addEventListener('input',function(){searchTerm=this.value;renderSections()});
+renderSections();
+
+/* ============ SLAB DATA ============ */
+const slabData={
+  new:{
+    heading:'New Tax Regime — FY 2025-26 (AY 2026-27) — Default Regime',
+    note:'Rebate u/s 87A: Nil tax for income up to Rs. 12,00,000 (Rs. 12,75,000 with standard deduction of Rs. 75,000). Surcharge and cess applicable separately.',
+    rows:[
+      ['Up to Rs. 3,00,000','Nil','—'],
+      ['Rs. 3,00,001 – Rs. 7,00,000','5%','—'],
+      ['Rs. 7,00,001 – Rs. 10,00,000','10%','—'],
+      ['Rs. 10,00,001 – Rs. 12,00,000','15%','—'],
+      ['Rs. 12,00,001 – Rs. 15,00,000','20%','—'],
+      ['Above Rs. 15,00,000','30%','—'],
+    ],
+    headers:['Income Slab','Tax Rate','Surcharge']
+  },
+  old:{
+    heading:'Old Tax Regime — FY 2025-26 (AY 2026-27) — Optional',
+    note:'Allows all deductions: 80C (Rs. 1.5L), 80D, HRA, LTA, home loan interest etc. Rebate u/s 87A: Rs. 12,500 for income up to Rs. 5L.',
+    rows:[
+      ['Up to Rs. 2,50,000','Nil','—'],
+      ['Rs. 2,50,001 – Rs. 5,00,000','5%','—'],
+      ['Rs. 5,00,001 – Rs. 10,00,000','20%','—'],
+      ['Above Rs. 10,00,000','30%','—'],
+      ['Senior Citizens (60-80 yrs): Up to Rs. 3,00,000','Nil','—'],
+      ['Super Senior (80+ yrs): Up to Rs. 5,00,000','Nil','—'],
+    ],
+    headers:['Income Slab','Tax Rate','Surcharge']
+  },
+  company:{
+    heading:'Corporate Tax Rates — FY 2025-26 (AY 2026-27)',
+    note:'Surcharge: 7% (income Rs. 1–10 Cr), 12% (above Rs. 10 Cr). Health & Education Cess: 4% on tax+surcharge.',
+    rows:[
+      ['Domestic company — regular rate','30%','7% / 12%'],
+      ['Domestic company — Section 115BAA (no exemptions)','22%','10%'],
+      ['New manufacturing company — Section 115BAB','15%','10%'],
+      ['Foreign company','40%','2% / 5%'],
+      ['LLP / Partnership Firm','30%','12% (>Rs.1Cr)'],
+      ['Co-operative Society (new regime — 115BAD)','22%','10%'],
+    ],
+    headers:['Entity / Regime','Tax Rate','Surcharge']
+  }
+};
+
+function showSlab(type,btn){
+  document.querySelectorAll('.slab-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const d=slabData[type];
+  document.getElementById('slabContent').innerHTML=`
+    <div class="slab-section">
+      <h4>${d.heading}</h4>
+      <p style="font-size:13px;color:var(--text-secondary);margin-bottom:1rem;padding:10px 14px;background:var(--cream);border-radius:6px;border-left:3px solid var(--gold)">${d.note}</p>
+      <table class="slab-table">
+        <thead><tr>${d.headers.map(h=>`<th>${h}</th>`).join('')}</tr></thead>
+        <tbody>${d.rows.map((r,i)=>`<tr>${r.map((c,j)=>`<td class="${j>0?'rate-cell':''}">${c}</td>`).join('')}</tr>`).join('')}</tbody>
+      </table>
+    </div>
+  `;
+}
+showSlab('new',document.querySelector('.slab-tab'));
+
+/* ============ TDS RATES ============ */
+const tdsRates=[
+  ['192','Sec 260','Salary','As per slab','Slab rates','New regime default from FY 25-26'],
+  ['192A','Sec 261','EPF withdrawal','Rs. 50,000','10%','Threshold ↑ from Rs. 30,000'],
+  ['194','Sec 265','Dividend','Rs. 10,000','10%','Threshold ↑ from Rs. 5,000'],
+  ['194A','Sec 266','Interest — banks / post offices','Rs. 50,000 / Rs. 1,00,000*','10%','Senior citizen threshold doubled'],
+  ['194B','Sec 268','Lottery / puzzle winnings','Rs. 10,000','30%','No change'],
+  ['194C','Sec 269','Contractor payments','Rs. 30,000 / Rs. 1,00,000 p.a.','1% (ind) / 2%','No change'],
+  ['194D','Sec 270','Insurance commission','Rs. 20,000','5%','No change'],
+  ['194G','Sec 271','Commission on lottery tickets','Rs. 20,000','5%','No change'],
+  ['194H','Sec 272','Commission / brokerage','Rs. 20,000','5%','Rate ↓ from 10% (Budget 2024)'],
+  ['194I','Sec 273','Rent','Rs. 50,000 p.m.','2% / 10%','No change'],
+  ['194IA','Sec 274','TDS on immovable property sale','Rs. 50,00,000','1%','No change'],
+  ['194J','Sec 275','Professional / technical fees','Rs. 30,000','2% / 10%','No change'],
+  ['194K','Sec 276','Income from mutual fund units','Rs. 5,000','10%','No change'],
+  ['194LA','Sec 277','Compensation — compulsory acquisition','Rs. 5,00,000','10%','No change'],
+  ['194Q','Sec 278','Purchase of goods','Rs. 50,00,000 (TO > Rs. 10 Cr)','0.1%','No change'],
+  ['194R','Sec 279','Benefit / perquisite in business','Rs. 20,000 p.a.','10%','No change'],
+  ['194S','Sec 283','VDA / crypto transfer','Rs. 50,000 / Rs. 10,000*','1%','Made permanent; barter at FMV'],
+  ['194T','Sec 267','Payments to partners of firm / LLP','Rs. 20,000 p.a.','10%','NEW — effective 1 Apr 2025'],
+  ['195','Sec 284','Payments to non-residents','—','Rates per DTAA / Act','No structural change'],
+  ['206C(1H)','Sec 295','TCS — sale of goods','Rs. 50,00,000 (TO > Rs. 10 Cr)','0.1%','No change'],
+  ['206C(1G)','Sec 296','TCS — overseas remittance (LRS)','Rs. 7,00,000','20% / 0.5%*','Threshold ↑ from Rs. 0'],
+];
+
+let tdsFilterType='all', tdsSearchVal='';
+function isTCSRow(r){ return r[0].startsWith('206C'); }
+function isNewRow(r){ return r[5].includes('NEW'); }
+
+function renderTDS(){
+  const body=document.getElementById('tdsBody');
+  const empty=document.getElementById('tdsEmpty');
+  const q=tdsSearchVal.toLowerCase();
+  const filtered=tdsRates.filter(r=>{
+    const typeOk = tdsFilterType==='all'||
+      (tdsFilterType==='tcs'&&isTCSRow(r))||
+      (tdsFilterType==='tds'&&!isTCSRow(r))||
+      (tdsFilterType==='new'&&isNewRow(r));
+    const searchOk = !q||r.some(c=>c.toLowerCase().includes(q));
+    return typeOk&&searchOk;
+  });
+  if(!filtered.length){body.innerHTML='';empty.style.display='block';return;}
+  empty.style.display='none';
+  body.innerHTML=filtered.map((r)=>{
+    const isNew=isNewRow(r);
+    const isTCS=isTCSRow(r);
+    const changeColor=isNew?'#0F6E56':r[5]==='No change'?'var(--text-muted)':'#854F0B';
+    const changeBold=isNew||r[5].includes('↑')||r[5].includes('↓')||r[5].includes('permanent');
+    return `<tr style="${isNew?'background:#F0FAF4':isTCS?'background:#F7F3EC':''}">
+      <td style="font-family:'DM Mono',monospace;font-size:12px;color:#185FA5;font-weight:500">${r[0]}</td>
+      <td style="font-family:'DM Mono',monospace;font-size:12px;color:#0F6E56;font-weight:600">${r[1]}</td>
+      <td style="font-size:13px">
+        ${isNew?'<span style="display:inline-block;font-size:9px;font-weight:700;letter-spacing:0.5px;padding:2px 6px;background:#0F6E56;color:#fff;border-radius:3px;margin-right:5px;vertical-align:middle">NEW</span>':''}
+        ${isTCS?'<span style="display:inline-block;font-size:9px;font-weight:700;letter-spacing:0.5px;padding:2px 6px;background:#854F0B;color:#fff;border-radius:3px;margin-right:5px;vertical-align:middle">TCS</span>':''}
+        <span style="font-weight:${isNew?'500':'400'}">${r[2]}</span>
+      </td>
+      <td style="font-size:12px;color:var(--text-muted)">${r[3]}</td>
+      <td class="rate-cell">${r[4]}</td>
+      <td style="font-size:12px;color:${changeColor};font-weight:${changeBold?'500':'400'}">${r[5]}</td>
+    </tr>`;
+  }).join('');
+}
+
+function filterTDS(val){ tdsSearchVal=val; renderTDS(); }
+function setTDSFilter(type,btn){
+  tdsFilterType=type;
+  document.querySelectorAll('.tds-filter-btn').forEach(b=>{
+    b.style.background=b===btn?'var(--navy)':'var(--white)';
+    b.style.color=b===btn?'var(--white)':type==='new'&&b===btn?'#0F6E56':'var(--text-secondary)';
+    b.style.borderColor=b===btn?'var(--navy)':'var(--border)';
+  });
+  renderTDS();
+}
+renderTDS();
+</script>
+</body>
+</html>
